@@ -41,15 +41,13 @@ link_libraries(
     dl
     m
     quadmath
-    asis_adapter
     stdc++fs
 )
 link_directories(
     $ENV{ROSE_HOME}/lib
     $ENV{BOOST_HOME}/lib
-    $ENV{ASIS_ADAPTER}/lib
 )
-SET(CMAKE_INSTALL_RPATH "$ENV{BOOST_HOME}/lib;$ENV{ASIS_ADAPTER}/lib;$ENV{ROSE_HOME}/lib")
+SET(CMAKE_INSTALL_RPATH "$ENV{BOOST_HOME}/lib;$ENV{ROSE_HOME}/lib")
 
 
 # lcom.out
